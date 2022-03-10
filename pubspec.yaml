@@ -1,7 +1,7 @@
 name: neumorphic_loader
 description: Circular Loader with a neumorphic container.
-version: 0.0.3
-homepage: https://github.com/sivaprasadnk/neumorphic_loader.git
+version: 1.0.0
+homepage: https://github.com/sivaprasadnk/neumorphic_loader
 
 environment:
   sdk: ">=2.15.1 <3.0.0"

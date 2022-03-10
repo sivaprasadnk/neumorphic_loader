@@ -3,6 +3,11 @@ library neumorphic_loader;
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
 
+/// A Circular loader with a Neumorphic(glass) container with customisable options.
+///
+///  [size] parameter must not be null. It defines the size of the neumorphic container.
+///
+/// [loaderColor], [borderColor], [borderRadius],  [blurValue] values are optional.
 class NeumorphicLoader extends StatelessWidget {
   const NeumorphicLoader({
     Key? key,
@@ -12,11 +17,22 @@ class NeumorphicLoader extends StatelessWidget {
     this.blurValue,
     required this.size,
   }) : super(key: key);
+
+  ///  Size of the neumorphic surrounding container.
   final double size;
+
+  /// border-radius of container. Value is optional. Defaults to 15.
   final double? borderRadius;
+
+  /// Color of loader. Value is optional. Defaults to Colors.blue.
   final Color? loaderColor;
+
+  /// Color of border. Value is optional. Defaults to Colors.cyanAccent.
   final Color? borderColor;
+
+  /// blur-value. Value is optional. Defaults to 5.
   final double? blurValue;
+
   @override
   Widget build(BuildContext context) {
     return GlassContainer(

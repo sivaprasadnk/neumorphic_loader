@@ -9,7 +9,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  neumorphic_loader: ^0.0.3
+  neumorphic_loader: ^1.0.0
 ```
 
 ## Usage
